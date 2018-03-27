@@ -2,9 +2,11 @@
 <% @restaurants.each do |restaurant| %>
   <ul>
     <li>
-      <%= link_to restaurant.name, restaurant_path(restaurant) %>
+      <%= link_to restaurant.names, restaurant_path(restaurant) %>
     </li>
   </ul>
   <% end %>
+
+  <%= link_to 'create new restaurant', new_restaurant_path %>
 
 <p>Find me in app/views/restaurants/index.html.erb</p>
